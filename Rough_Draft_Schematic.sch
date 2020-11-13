@@ -5328,146 +5328,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="switch-coto" urn="urn:adsk.eagle:library:374">
-<description>&lt;b&gt;COTO TECHNOLOGY&lt;/b&gt;&lt;p&gt;
-Reed switch&lt;br&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="CT10-XXXX-A2" urn="urn:adsk.eagle:footprint:27086/1" library_version="2">
-<description>&lt;b&gt;CT10 Series Molded Switch&lt;/b&gt;&lt;p&gt;
-Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
-<wire x1="-6.275" y1="1.1" x2="6.3" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="6.3" y1="1.1" x2="6.3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="6.3" y1="-1.1" x2="-6.3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-6.3" y1="-1.1" x2="-6.3" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="-6.5" y1="-1.3" x2="-6.5" y2="1.3" width="0" layer="20"/>
-<wire x1="-6.5" y1="1.3" x2="6.5" y2="1.3" width="0" layer="20"/>
-<wire x1="6.5" y1="1.3" x2="6.5" y2="-1.3" width="0" layer="20"/>
-<wire x1="6.5" y1="-1.3" x2="-6.5" y2="-1.3" width="0" layer="20"/>
-<smd name="1" x="-7.5" y="0" dx="1.8" dy="1.8" layer="1"/>
-<smd name="2" x="7.5" y="0" dx="1.8" dy="1.8" layer="1"/>
-<text x="-8.32" y="1.3302" size="1.27" layer="25">&gt;NAME</text>
-<text x="-8.32" y="-3.1082" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-7.85" y1="-0.575" x2="-6.25" y2="0.575" layer="51"/>
-<rectangle x1="6.3" y1="-0.575" x2="7.85" y2="0.575" layer="51"/>
-</package>
-<package name="CT10-XXXX-G1" urn="urn:adsk.eagle:footprint:27087/1" library_version="2">
-<description>&lt;b&gt;CT10 Series Molded Switch&lt;/b&gt;&lt;p&gt;
-Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
-<wire x1="-6.275" y1="1.1" x2="6.3" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="6.3" y1="1.1" x2="6.3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="6.3" y1="-1.1" x2="-6.3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-6.3" y1="-1.1" x2="-6.3" y2="1.1" width="0.2032" layer="21"/>
-<smd name="1" x="-7.625" y="0" dx="1.8" dy="1.8" layer="1"/>
-<smd name="2" x="7.625" y="0" dx="1.8" dy="1.8" layer="1"/>
-<text x="-8.32" y="1.3302" size="1.27" layer="25">&gt;NAME</text>
-<text x="-8.32" y="-3.1082" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-8.2" y1="-0.575" x2="-6.4" y2="0.575" layer="51"/>
-<rectangle x1="6.4" y1="-0.575" x2="8.2" y2="0.575" layer="51"/>
-</package>
-<package name="CT10-XXXX-G4" urn="urn:adsk.eagle:footprint:27088/1" library_version="2">
-<description>&lt;b&gt;CT10 Series Molded Switch&lt;/b&gt;&lt;p&gt;
-Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
-<wire x1="-6.275" y1="1.1" x2="6.3" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="6.3" y1="1.1" x2="6.3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="6.3" y1="-1.1" x2="-6.3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-6.3" y1="-1.1" x2="-6.3" y2="1.1" width="0.2032" layer="21"/>
-<smd name="1" x="-9.2" y="0" dx="1.8" dy="1.8" layer="1"/>
-<smd name="2" x="9.225" y="0" dx="1.8" dy="1.8" layer="1"/>
-<text x="-8.32" y="1.3302" size="1.27" layer="25">&gt;NAME</text>
-<text x="-8.32" y="-3.1082" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-9.8" y1="-0.575" x2="-6.4" y2="0.575" layer="51"/>
-<rectangle x1="6.4" y1="-0.575" x2="9.8" y2="0.575" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="CT10-XXXX-A2" urn="urn:adsk.eagle:package:27090/1" type="box" library_version="2">
-<description>CT10 Series Molded Switch
-Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
-<packageinstances>
-<packageinstance name="CT10-XXXX-A2"/>
-</packageinstances>
-</package3d>
-<package3d name="CT10-XXXX-G1" urn="urn:adsk.eagle:package:27089/1" type="box" library_version="2">
-<description>CT10 Series Molded Switch
-Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
-<packageinstances>
-<packageinstance name="CT10-XXXX-G1"/>
-</packageinstances>
-</package3d>
-<package3d name="CT10-XXXX-G4" urn="urn:adsk.eagle:package:27091/1" type="box" library_version="2">
-<description>CT10 Series Molded Switch
-Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
-<packageinstances>
-<packageinstance name="CT10-XXXX-G4"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="SWITCH-NO" urn="urn:adsk.eagle:symbol:27085/1" library_version="2">
-<wire x1="-2.54" y1="0" x2="2.54" y2="0.889" width="0.254" layer="94"/>
-<circle x="-2.54" y="0" radius="0.2839" width="0" layer="94"/>
-<circle x="2.54" y="0" radius="0.2839" width="0" layer="94"/>
-<text x="-3.81" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CT10-XXXX-" urn="urn:adsk.eagle:component:27092/2" prefix="SW" library_version="2">
-<description>&lt;b&gt;CT10 Series Molded Switch&lt;/b&gt;&lt;p&gt;
-Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
-<gates>
-<gate name="G$1" symbol="SWITCH-NO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="A2" package="CT10-XXXX-A2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27090/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="2" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="G1" package="CT10-XXXX-G1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27089/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="G4" package="CT10-XXXX-G4">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27091/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="transistor-npn" urn="urn:adsk.eagle:library:398">
 <description>&lt;b&gt;NPN Transistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -5540,6 +5400,136 @@ Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="switch-omron" urn="urn:adsk.eagle:library:377">
+<description>&lt;b&gt;Omron Switches&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="B3F-10XX" urn="urn:adsk.eagle:footprint:27476/1" library_version="3">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<wire x1="3.302" y1="-0.762" x2="3.048" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="3.302" y1="-0.762" x2="3.302" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="0.762" x2="3.302" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="0.762" x2="-3.048" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-3.302" y1="0.762" x2="-3.302" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="-0.762" x2="-3.302" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
+<wire x1="-1.27" y1="3.048" x2="-1.27" y2="2.794" width="0.0508" layer="21"/>
+<wire x1="1.27" y1="2.794" x2="-1.27" y2="2.794" width="0.0508" layer="21"/>
+<wire x1="1.27" y1="2.794" x2="1.27" y2="3.048" width="0.0508" layer="21"/>
+<wire x1="1.143" y1="-2.794" x2="-1.27" y2="-2.794" width="0.0508" layer="21"/>
+<wire x1="1.143" y1="-2.794" x2="1.143" y2="-3.048" width="0.0508" layer="21"/>
+<wire x1="-1.27" y1="-2.794" x2="-1.27" y2="-3.048" width="0.0508" layer="21"/>
+<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.1524" layer="51"/>
+<wire x1="-2.159" y1="-3.048" x2="-1.27" y2="-3.048" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.159" y1="3.048" x2="1.27" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="3.048" x2="-1.27" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="3.048" x2="-2.159" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-3.048" x2="1.143" y2="-3.048" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-3.048" x2="2.159" y2="-3.048" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="-0.762" x2="3.048" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="0.762" x2="3.048" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="-0.762" x2="-3.048" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="0.762" x2="-3.048" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-2.159" x2="1.27" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="2.286" x2="-1.27" y2="2.286" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="1.27" x2="-2.413" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="-0.508" x2="-2.413" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="0.508" x2="-2.159" y2="-0.381" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="1.778" width="0.1524" layer="21"/>
+<circle x="-2.159" y="-2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="2.159" y="-2.032" radius="0.508" width="0.1524" layer="51"/>
+<circle x="2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="-2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="0.635" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="0.254" width="0.1524" layer="21"/>
+<pad name="1" x="-3.2512" y="2.2606" drill="1.016" shape="long"/>
+<pad name="3" x="-3.2512" y="-2.2606" drill="1.016" shape="long"/>
+<pad name="2" x="3.2512" y="2.2606" drill="1.016" shape="long"/>
+<pad name="4" x="3.2512" y="-2.2606" drill="1.016" shape="long"/>
+<text x="-3.048" y="3.683" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.048" y="-5.08" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.318" y="1.651" size="1.27" layer="51" ratio="10">1</text>
+<text x="3.556" y="1.524" size="1.27" layer="51" ratio="10">2</text>
+<text x="-4.572" y="-2.794" size="1.27" layer="51" ratio="10">3</text>
+<text x="3.556" y="-2.794" size="1.27" layer="51" ratio="10">4</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="B3F-10XX" urn="urn:adsk.eagle:package:27496/1" type="box" library_version="3">
+<description>OMRON SWITCH</description>
+<packageinstances>
+<packageinstance name="B3F-10XX"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="TS2" urn="urn:adsk.eagle:symbol:27469/1" library_version="3">
+<wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="1.905" x2="-3.175" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="-1.905" x2="-3.175" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.127" width="0.4064" layer="94"/>
+<circle x="0" y="2.54" radius="0.127" width="0.4064" layer="94"/>
+<text x="-6.35" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="S1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="P1" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="10-XX" urn="urn:adsk.eagle:component:27498/2" prefix="S" uservalue="yes" library_version="3">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="TS2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B3F-10XX">
+<connects>
+<connect gate="1" pin="P" pad="3"/>
+<connect gate="1" pin="P1" pad="4"/>
+<connect gate="1" pin="S" pad="1"/>
+<connect gate="1" pin="S1" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:27496/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="B3F-1000" constant="no"/>
+<attribute name="OC_FARNELL" value="176432" constant="no"/>
+<attribute name="OC_NEWARK" value="36M3542" constant="no"/>
+<attribute name="POPULARITY" value="72" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5551,7 +5541,7 @@ Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
 </classes>
 <parts>
 <part name="IC1" library="esp-12e-f" deviceset="ESP-12E/F" device=""/>
-<part name="VDD1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device="" value="5V"/>
+<part name="VDD1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device="" value="7.4"/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
@@ -5562,10 +5552,10 @@ Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="10k"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="10k"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="10k"/>
-<part name="SW1" library="switch-coto" library_urn="urn:adsk.eagle:library:374" deviceset="CT10-XXXX-" device="A2" package3d_urn="urn:adsk.eagle:package:27090/1"/>
 <part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="Q1" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="2N2102" device="" package3d_urn="urn:adsk.eagle:package:28729/1"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1" value="1k"/>
+<part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -5575,20 +5565,22 @@ Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
 <text x="86.36" y="195.58" size="1.778" layer="91">Serial Port</text>
 <text x="162.56" y="99.06" size="1.778" layer="91">Water Pump</text>
 <text x="154.94" y="50.8" size="1.778" layer="91">Motor Drive Transistor</text>
-<text x="185.42" y="162.56" size="1.778" layer="91">NOTES
-*****************
-1. We need to create EagleCAD parts for the sensors and actuator. Currently, we are using pin headers.
+<text x="218.44" y="127" size="1.778" layer="91">NOTES
+*************
 
-2. We need to possibly add a voltage regulator.
+1. We have updated VCC.
 
-3. The base resistor of the motor-driving transistor might need to be tweaked for minimal power dissipation.
+2. We have tidied a few things up.
 
-4. Additional circuitry (LED's, etc.) will be added if time permits.</text>
-<text x="185.42" y="124.46" size="1.778" layer="91">QUESTIONS
-********************
-1. How do we represent a pump (motor) in EagleCAD?
 
-2. Should there be references in the schematic to mechanical devices (water resevoir, soil, etc.)?</text>
+
+
+QUESTIONS
+***************
+
+1. Does the Moisture Sensor need to be connected to the clock?
+
+2. What kind of voltage regulator will we use?</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="43.18" y="43.18" smashed="yes">
@@ -5635,20 +5627,20 @@ Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
 <attribute name="NAME" x="95.0214" y="85.09" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="99.822" y="85.09" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SW1" gate="G$1" x="114.3" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="111.76" y="57.15" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="118.11" y="57.15" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="JP5" gate="A" x="43.18" y="-15.24" smashed="yes" rot="R90">
 <attribute name="VALUE" x="50.8" y="-21.59" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="Q1" gate="G$1" x="152.4" y="50.8" smashed="yes">
-<attribute name="NAME" x="142.24" y="58.42" size="1.778" layer="95"/>
-<attribute name="VALUE" x="142.24" y="55.88" size="1.778" layer="96"/>
+<attribute name="NAME" x="149.86" y="55.88" size="1.778" layer="95"/>
+<attribute name="VALUE" x="144.78" y="45.72" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="137.16" y="50.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="140.97" y="49.3014" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="140.97" y="54.102" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="138.43" y="49.3014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="138.43" y="54.102" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="S1" gate="1" x="111.76" y="60.96" smashed="yes">
+<attribute name="NAME" x="115.57" y="58.42" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="107.95" y="64.135" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -5672,7 +5664,6 @@ Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="0" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="0" x2="109.22" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="55.88" x2="114.3" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="114.3" y="-20.32"/>
 <pinref part="JP5" gate="A" pin="4"/>
@@ -5689,6 +5680,7 @@ Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
 <wire x1="154.94" y1="45.72" x2="154.94" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-20.32" x2="119.38" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="119.38" y="-20.32"/>
+<pinref part="S1" gate="1" pin="P1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5800,7 +5792,7 @@ Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
 <wire x1="96.52" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="78.74" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 <junction x="96.52" y="78.74"/>
-<pinref part="SW1" gate="G$1" pin="2"/>
+<pinref part="S1" gate="1" pin="S1"/>
 </segment>
 </net>
 <net name="N$10" class="0">
