@@ -4,7 +4,7 @@
 #include "hw.h"
 
 void setup_led_out();
-void set_led(int set_led);
+void set_led(int *set_led);
 
 
 #endif

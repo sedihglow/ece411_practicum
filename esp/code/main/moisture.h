@@ -4,6 +4,8 @@
 #include "hw.h"
 #include "Adafruit_seesaw.h"
 
+#define DEFAULT_MOISTURE_THRESH 500 // default low end. any lower then water
+
 int setup_moisture_sensor(Adafruit_seesaw *sensor);
 
 uint16_t read_moisture(Adafruit_seesaw *sensor);

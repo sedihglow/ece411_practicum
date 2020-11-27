@@ -6,11 +6,13 @@ void setup_led_out()
 }
 
 
-void set_led(int set_led)
+void set_led(int *set_led)
 {
-    if (set_led == HIGH) {
+    if (*set_led == HIGH) {
         digitalWrite(EXT_LED_PIN, HIGH); 
+        *set_led = LOW;
     } else {
         digitalWrite(EXT_LED_PIN, LOW);
+        *set_led = HIGH;
     }
 }
