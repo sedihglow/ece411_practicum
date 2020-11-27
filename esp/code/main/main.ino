@@ -1,6 +1,7 @@
 #include "hw.h"
 #include "moisture.h"
 #include "external_led.h"
+#include "water_sensor.h"
 
 Adafruit_seesaw moisture_sensor; // moisture sensor class
 
@@ -39,7 +40,7 @@ void loop()
 
     water_read = read_water_sensor();
     if (!water_read)
-        Serial.print("water level low");
+        Serial.println("water level low");
 
     set_led(LOW);
     delay(1000);

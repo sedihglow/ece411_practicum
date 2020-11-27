@@ -6,6 +6,6 @@
 
 void setup_water_sensor();
 
-void read_water_sensor();
+int read_water_sensor();
 
 #endif
