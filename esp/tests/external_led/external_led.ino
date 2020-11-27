@@ -2,13 +2,13 @@
 
 void setup()
 {
-    pinMode(OB_LED, OUTPUT);
+    pinMode(E_LED_PIN, OUTPUT);
 }
 
 void loop()
 {
-    digitalWrite(OB_LED, HIGH);
+    digitalWrite(E_LED_PIN, HIGH);
     delay(1000);
-    digitalWrite(OB_LED, LOW);
+    digitalWrite(E_LED_PIN, LOW);
     delay(1000);
 }
