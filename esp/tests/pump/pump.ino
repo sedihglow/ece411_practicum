@@ -9,12 +9,16 @@ void setup()
 
 void loop()
 {
-    //if (count == 0) {
-    digitalWrite(PUMP_PIN, HIGH);
-    delay(2000);
-     //   ++count;
-    //}
+   /*if (count == 0) {
+        digitalWrite(PUMP_PIN, HIGH);
+        delay(2000);
+         ++count;
+   }
+   */
 
-    //digitalWrite(PUMP_PIN, LOW);
-    //delay(2000);
+    digitalWrite(PUMP_PIN, HIGH);
+    delay(5000);
+
+    digitalWrite(PUMP_PIN, LOW);
+    delay(5000);
 }
