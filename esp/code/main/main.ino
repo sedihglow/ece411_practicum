@@ -58,6 +58,10 @@ void setup()
     // setup wifi, if wifi not connected creates hotspot which can change
     // ssid and password, saves new credentials to eeprom.
     setup_wifi();
+
+    // print local ip address of ESP
+    Serial.print("IP address: ");
+    Serial.println(WiFi.localIP());
 }
 
 void loop()
