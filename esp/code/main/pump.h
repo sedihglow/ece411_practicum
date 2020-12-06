@@ -3,7 +3,7 @@
 
 #include "hw.h"
 
-#define DEFAULT_PUMP_TIME 2 // in seconds
+#define DEFAULT_PUMP_TIME 5 // in seconds
 
 void setup_pump_pin();
 

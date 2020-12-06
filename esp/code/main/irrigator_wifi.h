@@ -12,7 +12,7 @@
 void setup_wifi();
 
 /* 
- * Functions below written at
+ * test_wifi, setup_ap, launch_web and create_web_server found here
  * https://electronicsinnovation.com/change-esp8266-wifi-credentials-without-
  * uploading-code-from-arduino-ide/
  * edited and modified by James Ross
@@ -21,6 +21,5 @@ bool test_wifi();
 void setup_ap();
 void launch_web();
 void create_web_server();
-
 
 #endif
