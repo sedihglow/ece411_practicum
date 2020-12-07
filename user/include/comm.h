@@ -13,6 +13,10 @@
 
 #define IO_BUFF 256
 
+#define MSG_TYPE_SIZE 1
+#define C_MTHRESH 0x0
+#define C_PUMP_TIME 0x1
+
 typedef struct server_info {
     in_addr_t addr;      /* network binary of server address */
     char *dot_addr;      /* dotted representation of IP address */
@@ -62,10 +66,13 @@ static inline ssize_t socket_receive(int sockfd, uint8_t *rx,
 } 
 
 serv_info_s* com_init_serv_info(void);
+void com_free_serv_info(serv_info_s *dest);
+
 int connect_to_server(serv_info_s *serv_info);
 int init_client_comm(serv_info_s *serv_info);
 ssize_t send_to_server(int sockfd, uint8_t *tx, size_t len, int flags);
 ssize_t receive_from_server(int sockfd, uint8_t *rx, size_t len, int flags);
-void com_free_serv_info(serv_info_s *dest);
 
+int send_new_moist_thresh(serv_info_s *serv_info, char *mthresh);
+int send_new_pump_time(serv_info_s *serv_info, char *ptime);
 #endif

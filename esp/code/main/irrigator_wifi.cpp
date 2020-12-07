@@ -169,3 +169,22 @@ void create_web_server()
     });
   }
 }
+
+/* msg layout: command | new value | '\r' */
+void handle_user_request(char *incoming_packet)
+{
+    uint8_t command = incoming_packet[0]; 
+    char *string_value = &incoming_packet[1];
+    int num_value = atoi(string_value);
+    
+    switch (command) {
+    case C_MTHRESH:
+        change_mthresh(&edata, num_value);
+        break;
+    case C_PUMP_TIME:
+        change_pump_time(&edata, num_value);
+        break;
+    }
+
+}
+

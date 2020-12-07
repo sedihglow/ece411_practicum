@@ -13,6 +13,12 @@ uint16_t moisture_read = 0;
 int water_read = 0;
 int led_blink = HIGH;
 
+WiFiUDP udp;
+unsigned int local_udp_port = UDP_PORT; // listens on this port
+char incoming_packet[PACKET_BUFF_SIZE] = {'\0'}; // buffer for incoming packets
+int packet_size = 0;
+int len = 0;
+
 void setup()
 {
     int ret = SUCCESS;
@@ -27,7 +33,7 @@ void setup()
 
     // if eeprom is uninitialized, initialize it.
     EEPROM.begin(EEPROM_SIZE);
-    EEPROM.get(0, init_test_data);
+    EEPROM.get(start_addr, init_test_data);
     if (init_test_data.pump_time > UNINIT_PUMP_VALUE_THRESH ||
         init_test_data.pump_time == 0) {
         Serial.println("storing init edata to eeprom");
@@ -62,11 +68,29 @@ void setup()
     // print local ip address of ESP
     Serial.print("IP address: ");
     Serial.println(WiFi.localIP());
+
+    udp.begin(local_udp_port);
+    Serial.printf("Now listening at IP %s, UDP port %d\n", 
+                  WiFi.localIP().toString().c_str(), local_udp_port);
 }
 
 void loop()
 {
     set_led(&led_blink);
+
+    // check if we have any messages from user
+    packet_size = udp.parsePacket();
+    if (packet_size) {
+        Serial.printf("Received %d bytes from %s, port %d\n",
+                      packet_size, udp.remoteIP().toString().c_str(), 
+                      udp.remotePort());
+        len = udp.read(incoming_packet, PACKET_BUFF_SIZE);
+        if (len > 0)
+            incoming_packet[len] = '\0';
+        
+        handle_user_request(incoming_packet);
+    }
+
 
     moisture_read = read_moisture(&moisture_sensor); 
     Serial.println("moisture reading: " +String(moisture_read));

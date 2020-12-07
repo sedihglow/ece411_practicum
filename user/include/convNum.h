@@ -1,14 +1,7 @@
 /*******************************************************************************
- * Level 1 cache similator project
- * ECE 4/585
- * Mark Faust
- * 12/3/2017
- * Portland State University, Portland OR
- * written and property of : James Ross
- *
  *   filename: convNum.h
-    Turns a string of characters into a their numerical equivilance using
-    strtoul family and error checking the results.
+ *   Turns a string of characters into a their numerical equivilance using
+ *   strtoul family and error checking the results.
  ******************************************************************************/
 
 

@@ -20,7 +20,7 @@ $(BIN):$(OBJS)
 valgrind:				# check for memory leak
 						$(info -- Checking For Memory Leaks --)
 						make
-						valgrind --leak-check=full --show-leak-kinds=all ./bin/cli_irc.out
+						valgrind --leak-check=full --show-leak-kinds=all ./bin/user.out
 
 .PHONY: debug
 debug:					# GNU debugger

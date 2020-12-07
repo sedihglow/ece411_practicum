@@ -6,7 +6,7 @@
 #include "pump.h" // for default values
 
 #define EEPROM_SIZE 512
-#define UNINIT_PUMP_VALUE_THRESH 50
+#define UNINIT_PUMP_VALUE_THRESH 51
 #define SSID_SIZE 32
 #define PASS_SIZE 31
 #define DEFAULT_SSID "DEFAULT_SSID" //"ASUS_88_2G" "DEFAULT_SSID"
@@ -20,4 +20,7 @@ typedef struct eeprom_data {
 } data_s;
 
 void init_eeprom_data(data_s *init_data);
+
+void change_mthresh(data_s *data, int num);
+void change_pump_time(data_s *data, int num);
 #endif

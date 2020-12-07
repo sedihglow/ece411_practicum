@@ -111,9 +111,64 @@ ssize_t receive_from_server(int sockfd, uint8_t *rx, size_t len, int flags)
     return socket_receive(sockfd, rx, len, flags);
 }
 
+/* msg format: C_MTHRESH | char *msg | \r */
+int send_new_moist_thresh(serv_info_s *serv_info, char *mthresh)
+{
+    uint8_t *tx = NULL;
+    int i = 0;
+    size_t mthresh_len = strlen(mthresh) + 1;
+    size_t tx_len = MSG_TYPE_SIZE + mthresh_len + 1;
+
+    tx = CALLOC_ARRAY(uint8_t, tx_len);
+    if (!tx)
+        errExit("send_new_moist_thresh: Failed to allocate TX");
+  
+    /* fill in client name */
+    i = 0;
+    tx[i] = C_MTHRESH;
+    ++i;
+
+    strncpy((char*)(tx+i), mthresh, mthresh_len);
+    i += mthresh_len;
+
+    tx[i] = '\r';
+    ++i;
+   
+    send_to_server(serv_info->sockfd, tx, tx_len, NO_FLAGS);
+    
+    free(tx);
+    return SUCCESS;
+}
+
+int send_new_pump_time(serv_info_s *serv_info, char *ptime)
+{
+    uint8_t *tx = NULL;
+    int i = 0;
+    size_t ptime_len = strlen(ptime) + 1;
+    size_t tx_len = MSG_TYPE_SIZE + ptime_len + 1;
+
+    tx = CALLOC_ARRAY(uint8_t, tx_len);
+    if (!tx)
+        errExit("send_new_moist_thresh: Failed to allocate TX");
+  
+    /* fill in client name */
+    i = 0;
+    tx[i] = C_PUMP_TIME;
+    ++i;
+
+    strncpy((char*)(tx+i), ptime, ptime_len);
+    i += ptime_len;
+
+    tx[i] = '\r';
+    ++i;
+   
+    send_to_server(serv_info->sockfd, tx, tx_len, NO_FLAGS);
+    
+    free(tx);
+    return SUCCESS;
+}
 
 void com_free_serv_info(serv_info_s *dest)
 {
     FREE_ALL(dest->dot_addr, dest->socket_info, dest);
 }
-
