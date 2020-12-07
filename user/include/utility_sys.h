@@ -187,12 +187,4 @@
     }                                                                          \
 } /* end TIMESPEC_SUB */
 
-static inline void display_clear(void)
-{
-    int i;
-    for (i=0; i < 10; ++i) {
-        printf("\n\n\n\n\n\n\n\n\n\n");
-    }
-    fflush(stdout);
-} /* end display_clear */
 #endif /************ EOF **************/

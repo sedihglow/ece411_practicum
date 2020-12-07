@@ -11,6 +11,8 @@
 #define COM_SOCK_TYPE   SOCK_DGRAM /* udp socket */
 #define COM_IP_PROTOCOL 0              /* Default for type in socket() */
 
+#define IO_BUFF 256
+
 typedef struct server_info {
     in_addr_t addr;      /* network binary of server address */
     char *dot_addr;      /* dotted representation of IP address */
@@ -39,7 +41,7 @@ static inline ssize_t socket_transmit(int sockfd, uint8_t *tx,
     tx        += sent; 
 
     return (len - remaining);
-} /* end socket_transmit */
+}
 
 static inline ssize_t socket_receive(int sockfd, uint8_t *rx, 
                                      size_t len, int flags)
