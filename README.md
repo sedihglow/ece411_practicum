@@ -3,7 +3,7 @@ ece411 practicum project Team 16
 
 # how to upload to ESP
 1. Start upload from arduino IDE.
-  - It still sit on connecting for this time.
+  - It will sit on connecting for this time.
 2. Pull the reset pin low or unplug the device
 3. Pull GPIO2 low with a button.
 4. Let the reset pin go high or plug back in the device while gpio2 is low
