@@ -24,6 +24,8 @@ The user program will prompt the user with a menu
   - change moisture threshold
   - change pump time
   - exit program
+  
 The moisture threshold can be values of 1 to 1000
+
 The pump time can be between 1 and 10 seconds
 
