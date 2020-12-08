@@ -23,4 +23,6 @@ void init_eeprom_data(data_s *init_data);
 
 void change_mthresh(data_s *data, int num);
 void change_pump_time(data_s *data, int num);
+
+void test_get_eeprom_data(data_s *data);
 #endif

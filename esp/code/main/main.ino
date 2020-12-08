@@ -35,9 +35,9 @@ void setup()
     EEPROM.begin(EEPROM_SIZE);
     EEPROM.get(start_addr, init_test_data);
     if (init_test_data.pump_time > UNINIT_PUMP_VALUE_THRESH ||
-        init_test_data.pump_time == 0) {
+        init_test_data.pump_time < 1) {
         Serial.println("storing init edata to eeprom");
-        EEPROM.put(0, edata);
+        EEPROM.put(start_addr, edata);
         EEPROM.commit();
     }
 

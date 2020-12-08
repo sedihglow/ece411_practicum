@@ -13,13 +13,15 @@ int statusCode;
 void setup_wifi()
 {
     unsigned int start_addr = 0;
-
+    
+    /*
     // try to connect with default wifi credentials
     WiFi.begin(edata.ssid, edata.pass); 
     if (test_wifi()) {
         Serial.println("wifi connected with default credentials");
         return;
     }
+    */
 
     Serial.println("Disconnecting current wifi connection");
     WiFi.disconnect();

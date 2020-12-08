@@ -4,7 +4,7 @@
 #include "utility_sys.h"
 
 #define NO_FLAGS 0  /* used for functions where no flag argument is used. */
-#define COM_ESP_ADDR    "192.168.1.45"
+#define COM_ESP_ADDR    "192.168.1.26"
 #define COM_ESP_LEN     sizeof(COM_ESP_ADDR)
 #define COM_ESP_PORT    4210 /* port listening on esp */
 #define COM_NET_DOMAIN  AF_INET        /* network domain we are using. IPV4 */
