@@ -10,7 +10,15 @@ ece411 practicum project Team 16
   - The code should start uploading
 5. let go of the GPIO2 button to ground.
 
-# ESP program flow
+# ESP setup program
+1. Setup sensor pins
+2. Setup I2C for moisture sensor
+3. Try to connect to wifi using credentials in EEPROM
+4. If credentials are bad, start a wifi hotspot on ESP
+5. Connect to ESP using its wifi hotspot by connecting to the IP Address from a web browser
+6. Once credentials are changed it reconnects using the new credentials.
+
+# ESP main loop program flow
 1. Check for user packet
 2. if user sent a packet, handle the request for moisture threshold or pump time
 3. read the moisture sensor
